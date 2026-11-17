@@ -1,1 +1,62 @@
+# ===== 外部リポジトリ（公式の解説・コード。著作物なので再配布しない） =====
 tessokuBon/kyopro-tessoku/
+
+# ===== Python の生成物 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== 仮想環境 =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== ツールのキャッシュ =====
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.pyright/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ===== 秘密情報・環境変数（絶対に共有しない） =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+credentials.*
+
+# ===== 競プロ用ツールの生成物 =====
+# online-judge-tools がダウンロードするサンプルケース
+test/
+# Competitive Programming Helper のテストデータ
+.cph/
+# 手元のテスト用の入出力ファイル
+input.txt
+output.txt
+in.txt
+out.txt
+a.out
+
+# ===== エディタ =====
+# .vscode/settings.json は共有する。それ以外は個人用なので無視
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*~
+
+# ===== OS が作るファイル =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*:Zone.Identifier

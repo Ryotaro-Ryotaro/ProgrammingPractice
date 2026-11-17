@@ -1,0 +1,24 @@
+{
+  // 保存時にRuffで整形し、importも並べ替える
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // 型チェック。最初は basic、慣れたら standard
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+
+  // 実行時の作業フォルダをファイルの場所にする（input.txt などを読みやすくする）
+  "python.terminal.executeInFileDir": true,
+
+  // 見やすさ
+  "editor.rulers": [88],
+  "files.insertFinalNewline": true
+}
